@@ -1,0 +1,13 @@
+```javascript
+function generateRandomString(length: number): string {
+  const chars =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  const randomString = Array.from({ length }, () => {
+    const randomIndex = Math.floor(Math.random() * chars.length);
+    return chars.charAt(randomIndex);
+  }).join("");
+
+  return randomString;
+}
+```
